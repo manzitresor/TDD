@@ -11,6 +11,6 @@ class Solver
   end
 
   def fizzbuzz(num)
-    string = ((num % 3).zero? ? 'fizz' : '') 
+    string = ((num % 3).zero? ? 'fizz' : '') + ((num % 5).zero? ? 'buzz' : '')
   end
 end
