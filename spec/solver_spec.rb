@@ -28,11 +28,17 @@ describe Solver do
       end
     end
   end
-
+  
   describe '#fizzbuzz' do
     context 'when the number is divisible by 3' do
       it 'should return fizz' do
         expect(subject.fizzbuzz(3)).to eq 'fizz'
+      end
+    end
+
+    context 'when the number is divisible by 5' do
+      it 'should return buzz' do
+        expect(subject.fizzbuzz(5)).to eq 'buzz'
       end
     end
   end
