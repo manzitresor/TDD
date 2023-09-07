@@ -7,10 +7,18 @@ describe Solver do
         expect(subject.factorial(5)).to eq 120
       end
     end
+
     context 'when input is 0 or 1' do
       it 'should return factorial 1' do
         expect(subject.factorial(0) && subject.factorial(1)).to eq 1
       end
     end
+
+    context 'when input is negative' do
+      it 'should print error message' do
+        expect(subject.factorial(-1)).to eq 'Input should be a positive number!'
+      end
+    end
+  end
   end
 end
