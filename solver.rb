@@ -9,4 +9,8 @@ class Solver
   def reverse(word)
     word.reverse
   end
+
+  def fizzbuzz(num)
+    string = ((num % 3).zero? ? 'fizz' : '') 
+  end
 end
